@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <form name="form1">
+                <input type="text" class="screen">
+            </form>
+            <div class="table-container">
+                <table class="table">
+                    <tr class="row1">
+                        <td class="r1col1"> <button class="btn" type="button">Clear</button></td>
+                        <td class="row"></td>
+                        <td class="r1col2"> <button class="btn" type="button">Delete</button></td>
+                        <td class="row"></td>
+                        <td class="r1col3"><button class="btn" type="button">%</button></td>
+                        <td class="row"></td>
+                        <td class="r1col4"><button class="btn" type="button" onclick="insert('/')">/</button></td>
+                        <td class="row"></td>
+                    </tr>
+                    <tr>
+                        <td id="col1"></td>
+                    </tr>
+                    <tr class="row2">
+                        <td class="r2col1"><button class="btn" type="button"  onclick="insert(7)">7</button></td>
+                        <td class="row"></td>
+                        <td class="r2col2"><button class="btn" type="button"  onclick="insert(8)">8</button></td>
+                        <td class="row"></td>
+                        <td class="r2col3"><button class="btn" type="button"  onclick="insert(9)">9</button></td>
+                        <td class="row"></td>
+                        <td class="r2col4"><button class="btn" type="button"  onclick="insert('*')">*</button></td>
+                        <td class="row"></td>
+                    </tr>
+                    <tr>
+                        <td id="col2"></td>
+                    </tr>
+                    <tr class="row3">
+                        <td class="r3col1"><button class="btn" type="button"  onclick="insert(4)">4</button></td>
+                        <td class="row"></td>
+                        <td class="r3col2"><button class="btn" type="button"  onclick="insert(5)">5</button></td>
+                        <td class="row"></td>
+                        <td class="r3col3"><button class="btn" type="button"  onclick="insert(6)">6</button></td>
+                        <td class="row"></td>
+                        <td class="r3col4"><button class="btn" type="button"  onclick="insert('-')">-</button></td>
+                        <td class="row"></td>
+                    </tr>
+                    <tr>
+                        <td id="col3"></td>
+                    </tr>
+                    <tr class="row4">
+                        <td class="r4col1"><button class="btn" type="button"  onclick="insert(1)">1</button></td>
+                        <td class="row"></td>
+                        <td class="r4col2"><button class="btn" type="button"  onclick="insert(2)">2</button></td>
+                        <td class="row"></td>
+                        <td class="r4col3"><button class="btn" type="button"  onclick="insert(3)">3</button></td>
+                        <td class="row"></td>
+                        <td class="r4col4"><button class="btn" type="button"  onclick="insert('+')">+</button></td>
+                        <td class="row"></td>
+                    </tr>
+                    <tr>
+                        <td id="col4"></td>
+                    </tr>
+                    <tr class="row5">
+                        <td class="r5col1"><button class="btn" type="button"  onclick="insert(00)">00</td>
+                        <td class="row"></td>
+                        <td class="r5col2"><button class="btn" type="button"  onclick="insert(0)">0</td>
+                        <td class="row"></td>
+                        <td class="r5col3"><button class="btn" type="button"  onclick="insert('.')">.</td>
+                        <td class="row"></td>
+                        <td class="r5col4"><button class="btn" type="button"  onclick="insert('=')">=</td>
+                        <td class="row"></td>
+                    </tr>
+                </table>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="./Calculator.js"></script>
+</body>
+
+</html>
